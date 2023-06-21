@@ -23,6 +23,18 @@ class ProjectController extends Controller
         return view('admin.projects.index', compact('projects'));
     }
 
+    public function sortID($direction)
+    {
+
+        $projects = Project::orderBy('id', $direction)->get();
+        if ($direction === 'desc') {
+            $direction = 'asc';
+        }else{
+            $direction = 'desc';
+        }
+        return view('admin.projects.index', compact('projects', 'direction'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *

@@ -15,7 +15,7 @@
         <table class="table">
             <thead>
               <tr>
-                <th scope="col">ID</th>
+                <th scope="col"><a href="{{ route('admin.projects.sortID', $direction) }}">ID</a></th>
                 <th scope="col">Titolo</th>
                 <th scope="col">Repo Link</th>
                 <th scope="col">Collaboratori</th>
