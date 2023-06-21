@@ -17,6 +17,7 @@
               <tr>
                 <th scope="col"><a href="{{ route('admin.projects.sortID', $direction) }}">ID</a></th>
                 <th scope="col">Titolo</th>
+                <th scope="col">Tipo di progetto</th>
                 <th scope="col">Repo Link</th>
                 <th scope="col">Collaboratori</th>
                 <th scope="col">Azioni</th>
@@ -28,6 +29,7 @@
                 <tr>
                   <td>{{$project->id}}</td>
                   <td class="table-success">{{$project->title}}</td>
+                  <td class="table-success">{{$project->type?->name}}</td>
                   <td class="table-warning">{{$project->project_link}}</td>
                   <td class="table-danger">{{$project->collaborators}}</td>
                   <td>
