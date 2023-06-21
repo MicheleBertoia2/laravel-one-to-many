@@ -1,0 +1,8 @@
+@extends('layouts.app')
+
+@section('content')
+    <div class="container">
+        <h1 class="my-5">Admin part: Home</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, distinctio quibusdam? Quasi nemo possimus minus, eius est odit perspiciatis, dolor nisi nostrum quidem a rerum magnam unde temporibus adipisci molestias neque repellat ipsum maxime architecto? Deserunt eveniet voluptas officiis quae natus odit, nesciunt vel architecto incidunt illum deleniti consectetur blanditiis non, exercitationem pariatur repellendus laudantium totam iusto amet similique ea cupiditate nulla quidem. Quam quis cupiditate, tempora quas cumque ex nisi, omnis tenetur nulla error velit magnam enim esse corrupti sit eum eos accusamus, harum placeat fugit! Laboriosam excepturi obcaecati quibusdam! Ipsa sit eligendi enim maiores placeat qui, itaque, obcaecati, expedita facilis cumque aperiam cum quam. Sunt tempora vel reprehenderit reiciendis sint, nobis, quos et cumque accusantium minus officia perferendis quibusdam dolor excepturi harum provident deserunt. Similique reiciendis, rerum deserunt, debitis eaque ducimus dolores rem fugiat minus vitae possimus! Fugiat aperiam error quidem laborum, consectetur rem eius quam ratione maiores odio natus. Inventore sunt vel sint laudantium dolor perferendis cupiditate iste ex aliquam sit nulla repudiandae ea exercitationem, nemo hic aspernatur quibusdam quisquam sequi ut ducimus, doloremque ratione. Vero sint iste quod itaque vel iusto? Est, tempore tenetur iste, exercitationem voluptate repellendus obcaecati accusantium, aliquam laboriosam quasi quo ab assumenda.</p>
+    </div>
+@endsection
