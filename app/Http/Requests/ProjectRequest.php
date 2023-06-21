@@ -25,6 +25,7 @@ class ProjectRequest extends FormRequest
     {
         return [
             'title' => 'min:3|max:255|required',
+            'type_id' => 'required',
             'description' => 'required|min:3',
             'project_link' => 'max:255',
             'collaborators' => 'max:255',
@@ -41,6 +42,7 @@ class ProjectRequest extends FormRequest
             'title.required' => 'Il titolo è un campo obbligatorio',
             'title.min' => 'Il titolo deve contenere almeno :min caratteri',
             'title.max' => 'Il titolo può contenere al massimo :max caratteri',
+            'type_id.required' => 'Il tipo di progetto è un campo obbligatorio',
             'description.required' => 'La descrizione è obbligatoria',
             'description.min' => 'La descrizione deve contenere almeno :min caratteri',
             'collaborators.max' => 'Il campo può contenere al massimo :max caratteri',
