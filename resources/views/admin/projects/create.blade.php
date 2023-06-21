@@ -32,6 +32,22 @@
             </div>
 
             <div class="mb-3">
+                <label for="type_id" class="form-label">Tipo di progetto</label>
+
+                  <select name="type_id" id="type_id" class="form-control @error('type_id') is-invalid @enderror">
+                    <option value="">Seleziona il tipo di progetto</option>
+                    @foreach ($types as $type )
+                        <option value="{{ $type->id }}"
+                           @if ($type->id == old('type_id')) selected  @endif >
+                            {{ $type->name }}</option>
+                    @endforeach
+                  </select>
+                  @error('type_id')
+                      <p class="text-danger">{{ $message }}</p>
+                  @enderror
+            </div>
+
+            <div class="mb-3">
                 <label for="description" class="form-label">Descrizione Progetto (*)</label>
                 <textarea
                   type="text"
